@@ -1,0 +1,91 @@
+body{
+  margin: 0;
+  background-color: #1abc9c;
+  font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+nav{
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+h2{
+  margin:0;
+  color: white;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.card-container{
+  width: 100%;
+}
+
+.flip-container {
+  perspective: 1000;
+  float: left;
+}
+  /* flip the pane when hovered */
+  .flip .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 20%;
+  height: 200px;
+
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+
+h1{
+  padding-top: 60px;
+}
+
+img{
+  border: solid 10px white;
+}
+
+img, .name{
+  margin-top: 15px;
+  margin-left: 15%;
+}
+
+.name{
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  background-color: white;
+}
+
+.light {
+    font-weight: 700;
+    color: white;
+}
