@@ -6,4 +6,12 @@ $('.flip-container').on('click', function(){
   this.classList.toggle('flip');
 })
 
+
+$('button').on('click', function(){
+  var containers = $('.flip-container')
+  for(var i = 0; i < containers.length; i++){
+    containers[i].classList.toggle('flip');
+  }
+})
+
 });
