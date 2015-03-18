@@ -1,4 +1,6 @@
 console.log('linked')
+
+
 $(document).ready(function(){
 
 $('.flip-container').on('click', function(){

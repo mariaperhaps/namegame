@@ -91,3 +91,6 @@ img, .name{
 }
 
 
+.ui-loader{
+  visibility: hidden;
+}
