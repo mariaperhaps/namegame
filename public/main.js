@@ -1,8 +1,8 @@
 console.log('linked')
 $(document).ready(function(){
 
-var flipContainer = document.querySelector('.flip-container');
-flipContainer.addEventListener('click', function(){
+$('.flip-container').on('click', function(){
+  console.log('clicked');
   this.classList.toggle('flip');
 })
 
