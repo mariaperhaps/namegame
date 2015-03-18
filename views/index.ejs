@@ -10,12 +10,12 @@
 <body>
 <nav>
 <h2>WDI-NYC<span class="light">LEMON</span>
-<button>Flip All</button>
+<button class=".clickable">Flip All</button>
 </nav>
 <div class="container">
   <div class="row">
     <% for(var i = 0; i < students.length; i++){ %>
-        <div class="flip-container">
+        <div class="flip-container clickable">
           <div class="flipper">
             <div class="front">
               <img src="/img/<%= students[i].pic %>" width="150px">
