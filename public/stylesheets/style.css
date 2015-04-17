@@ -91,10 +91,6 @@ img, .name{
 }
 
 
-.ui-loader{
-  visibility: hidden;
-}
-
 .clickable {
   cursor: pointer;
 }
